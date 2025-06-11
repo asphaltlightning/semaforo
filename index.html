@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semáforo F1</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="overlay" id="clickArea">
+        <div class="container">
+            <form id="playerForm">
+                <input type="text" id="playerName" placeholder="Apodo" required />
+                <input type="email" id="playerEmail" placeholder="Correo electrónico" required />
+                <button type="submit">Comenzar</button>
+            </form>
+
+            <div id="game" style="display:none;">
+                <div id="semaforo" class="lights">
+                    <div class="light" id="l1"></div>
+                    <div class="light" id="l2"></div>
+                    <div class="light" id="l3"></div>
+                    <div class="light" id="l4"></div>
+                    <div class="light" id="l5"></div>
+                </div>
+                <p id="msg">Prepárate...</p>
+            </div>
+
+            <h2>🏁 Clasificación</h2>
+            <ul id="ranking"></ul>
+        </div>
+    </div>
+    <audio id="beep" src="beep.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

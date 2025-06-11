@@ -50,7 +50,7 @@ document.getElementById("clickArea").addEventListener("click", () => {
     renderRanking();
 
     // Enviar a Google Sheets mediante webhook (reemplaza la URL por la tuya real)
-    fetch("https://script.google.com/macros/s/TU_SCRIPT_ID/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbx3MP7rW8muIMOge-yhU_G3IqPiDwie8LNnwLKMalQhJQVLOokob2JAgjSYhqA54Z_5CQ/exec", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, reactionTime })
